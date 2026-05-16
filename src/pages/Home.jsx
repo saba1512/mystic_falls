@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import Characters from "../components/Artifacts"; // დაამატე ეს იმპორტი
+import Artifacts from "../components/Artifacts"; // დაამატე ეს იმპორტი
 import Factions from "../components/Factions";
 import Timeline from "../components/Timeline";
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main>
       <Hero />
-      <Characters /> 
+      <Artifacts /> 
       <Factions />
       <Timeline />
       

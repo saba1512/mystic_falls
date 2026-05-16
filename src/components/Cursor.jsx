@@ -26,13 +26,16 @@ const Cursor = () => {
   }, []);
 
   return (
-    <>
+    // hidden md:block მობაილზე მთლიანად გათიშავს ამ კონტეინერს
+    <div className="hidden md:block">
+      {/* პატარა წერტილი */}
       <div
         className="fixed top-0 left-0 w-2 h-2 bg-red-600 rounded-full pointer-events-none z-[9999] transition-transform duration-75 ease-out"
         style={{
           transform: `translate(${position.x - 4}px, ${position.y - 4}px) scale(${isHovered ? 2.5 : 1})`,
         }}
       />
+      {/* დიდი წრე */}
       <div
         className="fixed top-0 left-0 w-8 h-8 border border-red-600/50 rounded-full pointer-events-none z-[9998] transition-all duration-300 ease-out"
         style={{
@@ -40,7 +43,7 @@ const Cursor = () => {
           opacity: isHovered ? 0.3 : 1,
         }}
       />
-    </>
+    </div>
   );
 };
 

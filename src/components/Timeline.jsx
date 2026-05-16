@@ -80,7 +80,7 @@ const Timeline = () => {
               
               <div className={`content-box w-[42%] ${i % 2 === 0 ? 'text-right' : 'text-left'}`}>
                 <span className="text-red-700 font-mono text-sm tracking-[0.5em] font-bold block mb-2">{event.year}</span>
-                <h4 className="text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-4">{event.title}</h4>
+                <h4 className="text-1xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">{event.title}</h4>
                 <p className="text-zinc-500 text-xs md:text-sm uppercase tracking-widest leading-relaxed font-light">
                   {event.desc}
                 </p>
